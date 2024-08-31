@@ -146,7 +146,9 @@ public class Main {
     for (int i = zeroIndex; i <= hyphenIndex; i++) {
       matriz[q14Index][i] = -1;
     }
-    matriz[q14Index][4] = q15Index; // Transição de q14 com '4' para q15
+    matriz[q14Index][get_char_ref(alfabeto, '1')] = q15Index; // Transição de q14 com '4' para q15
+    matriz[q14Index][get_char_ref(alfabeto, '4')] = q15Index; // Transição de q14 com '4' para q15
+    matriz[q14Index][get_char_ref(alfabeto, '7')] = q15Index; // Transição de q14 com '4' para q15
 
     // Preenchendo a matriz com transições de q15 a q17
     for (int i = q15Index; i <= q17Index; i++) {
