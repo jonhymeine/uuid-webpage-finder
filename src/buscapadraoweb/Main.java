@@ -56,7 +56,7 @@ public class Main {
     crw.getListaRecursos().add("https://pub.dev/packages/uuid");
     // URLS:
     // - https://www.uuidgenerator.net/version4 - 1 UUID
-    // - https://www.npmjs.com/package/uuid - 13 UUIDs
+    // - https://www.npmjs.com/package/uuid - 13 UUIDs para a v4
     // - https://pub.dev/packages/uuid -1 UUID
     ArrayList<String> listaCodigos = crw.carregarRecursos();
 
@@ -146,9 +146,9 @@ public class Main {
     for (int i = zeroIndex; i <= hyphenIndex; i++) {
       matriz[q14Index][i] = -1;
     }
-    matriz[q14Index][get_char_ref(alfabeto, '1')] = q15Index; // Transição de q14 com '4' para q15
+    matriz[q14Index][get_char_ref(alfabeto, '1')] = q15Index; // Transição de q14 com '1' para q15
     matriz[q14Index][get_char_ref(alfabeto, '4')] = q15Index; // Transição de q14 com '4' para q15
-    matriz[q14Index][get_char_ref(alfabeto, '7')] = q15Index; // Transição de q14 com '4' para q15
+    matriz[q14Index][get_char_ref(alfabeto, '7')] = q15Index; // Transição de q14 com '7' para q15
 
     // Preenchendo a matriz com transições de q15 a q17
     for (int i = q15Index; i <= q17Index; i++) {
